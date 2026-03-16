@@ -1,18 +1,14 @@
-* {
-    box-sizing: border-box;
-}
-
 body {
-    background-color: #EAEAEA;
+    background-color: #90C7E3;
     color: #555555;
     font-family: Arial, Helvetica, sans-serif;
+    background-image: linear-gradient(to bottom, #FFFFFF, #90C7E3);
+    background-repeat: no-repeat;
 }
 
 #wrapper {
     width: 80%;
-    background-color: #90C7E3;
-    border: 1px solid #000033;
-    background-image: linear-gradient(to bottom, #FFFFFF, #90C7E3);
+    background-color: #FFFFFF;
     min-width: 960px;
     max-height: 2048px;
     margin-left: auto;
@@ -20,38 +16,23 @@ body {
     box-shadow: 3px 3px 3px #333333;
 }
 
+
 header {
     background-color: #002171;
     color: #FFFFFF;
-    height: 120px;
+    background-image: url(sunset.jpg);
+    background-repeat: no-repeat;
+    background-position: right;
+    height: 60px;
     text-align: center;
-    padding-top: 30px;
-    padding-left: 3em;
-}
-
-header a:link {
-    color: #FFFFFF;
-    text-decoration: none;
-}
-
-header a:visited {
-    color: #FFFFFF;
-    text-decoration: none;
-}
-
-header a:hover {
-    color: #90C7E3;
-
+    padding-top: 15px;
 }
 
 nav {
     background-color: #FFFFFF;
     font-weight: bold;
-    letter-spacing: 0.25em;
-    padding: 1.5em;
-    font-size: 120%;
-    float: left;
-    width: 160px;
+    text-align: center;
+    padding: 1em;
 }
 
 nav a {
@@ -59,13 +40,10 @@ nav a {
 }
 
 main {
-    background-color: #FFFFFF;
-    margin-left: 190px;
     padding-top: 1px;
     padding-right: 20px;
     padding-bottom: 20px;
-    padding-left: 30px;
-    overflow: auto;
+    padding-left: 20px;
     display: block;
 }
 
@@ -90,7 +68,7 @@ dt {
     color: #002171;
 }
 
-main ul {
+ul {
     list-style-image: url(marker.gif);
 }
 
@@ -104,8 +82,6 @@ main ul {
 }
 
 footer {
-    margin-left: 190px;
-    background-color: #FFFFFF;
     font-size: 75%;
     font-style: italic;
     text-align: center;
@@ -115,15 +91,13 @@ footer {
 
 #homehero {
     height: 300px;
-    margin-left: 190px;
-    background-image: url(coast2.jpg);
+    background-image: url(coast.jpg);
     background-size: 100% 100%;
     background-repeat: no-repeat;
 }
 
 #yurthero {
     height: 300px;
-    margin-left: 190px;
     background-image: url(yurt.jpg);
     background-size: 100% 100%;
     background-repeat: no-repeat;
@@ -131,34 +105,7 @@ footer {
 
 #trailhero {
     height: 300px;
-    margin-left: 190px;
     background-image: url(trail.jpg);
     background-size: 100% 100%;
     background-repeat: no-repeat;
-}
-
-section {
-    float: left;
-    width: 33%;
-    padding-left: 2em;
-    padding-right: 2em;
-}
-
-nav ul {
-    list-style-type: none;
-    margin: 0;
-    padding-left: 0;
-    font-size: 1.2em;
-}
-
-nav a:link {
-    color: #5C7FA3;
-}
-
-nav a:visited {
-    color: #344873;
-}
-
-nav a:hover {
-    color: #A52AA2;
 }
