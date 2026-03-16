@@ -167,4 +167,66 @@ nav li {
         margin-left: 2em;
         margin-right: 2em;
     }
+
+    .flow {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .flow section {
+        flex: 1;
+        margin-left: 2em;
+        margin-right: 2em;
+    }
+}
+
+@media (min-width: 1024px) {
+    #wrapper {
+        margin: auto;
+        width: 80%;
+        border: 1px solid #000033;
+        box-shadow: 3px 3px 3px #000033;
+    }
+
+    nav {
+        text-align: left;
+        padding-left: 1em;
+    }
+
+    @supports (display: grid) {
+        nav ul {
+            flex-direction: column;
+            padding-top: 1em;
+        }
+
+        header {
+            grid-area: header;
+        }
+
+        nav {
+            grid-area: nav;
+        }
+
+        .hero {
+            grid-area: hero;
+        }
+
+        main {
+            grid-area: main;
+        }
+
+        footer {
+            grid-area: footer;
+        }
+
+        #wrapper {
+            display: grid;
+            grid-template-columns: 180px 1fr;
+            grid-template-areas:
+                "header header"
+                "nav hero"
+                "nav main"
+                "nav footer";
+        }
+    }   
 }
