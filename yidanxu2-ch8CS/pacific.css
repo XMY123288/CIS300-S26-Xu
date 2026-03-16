@@ -10,13 +10,9 @@ body {
 
 #wrapper {
     background-color: #90C7E3;
-    border: 1px solid #000033;
-    width: 80%;
-    min-width: 960px;
     max-height: 2048px;
     margin-left: auto;
     margin-right: auto;
-    box-shadow: 3px 3px 3px #333333;
     background-image: linear-gradient(to bottom, #FFFFFF, #90C7E3);
 }
 
@@ -24,18 +20,14 @@ body {
 header {
     background-color: #002171;
     color: #FFFFFF;
-    height: 120px;
     text-align: center;
-    padding-top: 30px;
-    padding-left: 3em;
 }
 
 nav {
     font-weight: bold;
-    padding: 1.5em;
-    float: left;
-    width: 160px;
+    padding: 0em;
     font-size: 120%;
+    text-align: center;
 }
 
 nav a {
@@ -44,7 +36,6 @@ nav a {
 
 main {
     background-color: #FFFFFF;
-    margin-left: 190px;
     padding-top: 1px;
     padding-right: 20px;
     padding-bottom: 20px;
@@ -59,6 +50,8 @@ h1 {
     font-family: Georgia, 'Times New Roman', serif;
     font-size: 3em;
     letter-spacing: 0.25em;
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
 }
 
 h2 {
@@ -95,7 +88,6 @@ footer {
     text-align: center;
     font-family: Georgia, 'Times New Roman', serif;
     padding: 2em;
-    margin-left: 190px;
     background-color: #FFFFFF;
 }
 
@@ -104,7 +96,6 @@ footer {
     background-image: url(coast2.jpg);
     background-size: 100% 100%;
     background-repeat: no-repeat;
-    margin-left: 190px;
 }
 
 #yurthero {
@@ -112,7 +103,6 @@ footer {
     background-image: url(yurt.jpg);
     background-size: 100% 100%;
     background-repeat: no-repeat;
-    margin-left: 190px;
 }
 
 #trailhero {
@@ -120,14 +110,6 @@ footer {
     background-image: url(trail.jpg);
     background-size: 100% 100%;
     background-repeat: no-repeat;
-    margin-left: 190px;
-}
-
-section {
-    float: left;
-    width: 33%;
-    padding-left: 2em;
-    padding-right: 2em;
 }
 
 nav ul {
@@ -163,4 +145,8 @@ header a:visited {
 
 header a:hover {
     color: #90C7E3;
+}
+
+nav li {
+    border-bottom: 1px solid #000033;
 }
