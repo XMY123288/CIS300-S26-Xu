@@ -10,11 +10,7 @@ body {
 
 #wrapper {
     background-color: #90C7E3;
-    max-height: 2048px;
-    margin-left: auto;
-    margin-right: auto;
     background-image: linear-gradient(to bottom, #FFFFFF, #90C7E3);
-    background-repeat: no-repeat;
 }
 
 
@@ -49,7 +45,6 @@ h1 {
     margin-top: 0;
     margin-bottom: 0;
     font-family: Georgia, 'Times New Roman', serif;
-    font-size: 3em;
     letter-spacing: 0.25em;
     padding-top: 0.5em;
     padding-bottom: 0.5em;
@@ -167,17 +162,12 @@ nav li {
     section {
         margin-left: 2em;
         margin-right: 2em;
+        flex: 1;
     }
 
     .flow {
         display: flex;
         flex-direction: row;
-    }
-
-    .flow section {
-        flex: 1;
-        margin-left: 2em;
-        margin-right: 2em;
     }
 }
 
