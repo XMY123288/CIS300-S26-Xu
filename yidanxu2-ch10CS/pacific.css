@@ -175,6 +175,13 @@ tr:nth-of-type(odd) {
     background-color: #F5FAFC;
 }
 
+form{
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    margin-bottom: 2em;
+}
+
 @media (min-width: 600px) {
     nav ul{
         display: flex;
