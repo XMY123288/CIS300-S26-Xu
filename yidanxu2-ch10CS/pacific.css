@@ -1,0 +1,251 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #EAEAEA;
+    color: #555555;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#wrapper {
+    background-color: #90C7E3;
+    background-image: linear-gradient(to bottom, #FFFFFF, #90C7E3);
+}
+
+
+header {
+    background-color: #002171;
+    color: #FFFFFF;
+    text-align: center;
+}
+
+nav {
+    font-weight: bold;
+    padding: 0em;
+    font-size: 120%;
+    text-align: center;
+}
+
+nav a {
+    text-decoration: none;
+}
+
+main {
+    background-color: #FFFFFF;
+    padding-top: 1px;
+    padding-right: 20px;
+    padding-bottom: 20px;
+    padding-left: 30px;
+    display: block;
+    overflow: auto;
+}
+
+h1 {
+    margin-top: 0;
+    margin-bottom: 0;
+    font-family: Georgia, 'Times New Roman', serif;
+    letter-spacing: 0.25em;
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+}
+
+h2 {
+    color: #1976D2;
+    font-family: Georgia, 'Times New Roman', serif;
+    text-shadow: 1px 1px 1px #CCCCCC;
+}
+
+h3 {
+    color: #000033;
+    font-family: Georgia, 'Times New Roman', serif;
+}
+
+dt {
+    color: #002171;
+}
+
+main ul {
+    list-style-image: url(marker.gif);
+}
+
+.resort{
+    color: #1976D2;
+    font-weight: bold;
+}
+
+#content {
+    font-size: 90%;
+}
+
+footer {
+    font-size: 75%;
+    font-style: italic;
+    text-align: center;
+    font-family: Georgia, 'Times New Roman', serif;
+    padding: 2em;
+    background-color: #FFFFFF;
+}
+
+#homehero {
+    height: 300px;
+    background-image: url(coast2.jpg);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+
+#yurthero {
+    height: 300px;
+    background-image: url(yurt.jpg);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+
+#trailhero {
+    height: 300px;
+    background-image: url(trail.jpg);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding-left: 0;
+    font-size: 1.2em;
+}
+
+nav a:link {
+    color: #5C7FA3;
+    text-decoration: none;
+}
+nav a:visited {
+    color: #344873;
+    text-decoration: none;
+}
+
+nav a:hover {
+    color: #A52A2A;
+    text-decoration: none;
+}
+
+header a:link {
+    color: #FFFFFF;
+    text-decoration: none;
+}
+
+header a:visited {
+    color: #FFFFFF;
+    text-decoration: none;
+}
+
+header a:hover {
+    color: #90C7E3;
+}
+
+nav li {
+    border-bottom: 1px solid #000033;
+}
+
+table {
+    border: 2px solid #3399CC;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+th {
+    padding: 0.5em;
+    border: 2px solid #3399CC;
+}
+
+td {
+    padding: 0.5em;
+    border: 2px solid #3399CC;
+}
+
+td {
+    text-align: center;
+}
+
+td.text {
+    text-align: left;
+}
+
+tr:nth-of-type(odd) {
+    background-color: #F5FAFC;
+}
+
+@media (min-width: 600px) {
+    nav ul{
+        display: flex;
+        flex-direction: row;
+        align-items: nowrap;
+        justify-content: space-around;
+    }
+
+    nav li{
+        border-bottom: none;
+    }
+
+    section {
+        margin-left: 2em;
+        margin-right: 2em;
+        flex: 1;
+    }
+
+    .flow {
+        display: flex;
+        flex-direction: row;
+    }
+}
+
+@media (min-width: 1024px) {
+    #wrapper {
+        margin: auto;
+        width: 80%;
+        border: 1px solid #000033;
+        box-shadow: 3px 3px 3px #000033;
+    }
+
+    nav {
+        text-align: left;
+        padding-left: 1em;
+    }
+
+    @supports (display: grid) {
+        nav ul {
+            flex-direction: column;
+            padding-top: 1em;
+        }
+
+        header {
+            grid-area: header;
+        }
+
+        nav {
+            grid-area: nav;
+        }
+
+        .hero {
+            grid-area: hero;
+        }
+
+        main {
+            grid-area: main;
+        }
+
+        footer {
+            grid-area: footer;
+        }
+
+        #wrapper {
+            display: grid;
+            grid-template-columns: 180px 1fr;
+            grid-template-areas:
+                "header header"
+                "nav hero"
+                "nav main"
+                "nav footer";
+        }
+    }   
+}
