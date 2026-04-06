@@ -29,6 +29,7 @@ nav {
 
 nav a {
     text-decoration: none;
+    transition: color 0.3s ease-out;
 }
 
 main {
@@ -172,6 +173,11 @@ form{
 input,
 textarea{
     margin-bottom: 0.5em;
+}
+
+video {
+    float: right;
+    margin: 1em;
 }
 
 @media (min-width: 600px) {
