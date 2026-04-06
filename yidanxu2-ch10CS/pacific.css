@@ -169,10 +169,7 @@ form{
     flex-wrap: nowrap;
 }
 
-input{
-    margin-bottom: 0.5em;
-}
-
+input,
 textarea{
     margin-bottom: 0.5em;
 }
@@ -198,6 +195,18 @@ textarea{
     .flow {
         display: flex;
         flex-direction: row;
+    }
+    form{
+        width: 60%;
+        max-width: 30em;
+        display: grid;
+        grid-gap: 1em;
+        grid-template-columns: 6em 1fr;
+    }
+
+    input[type="submit"] {
+        grid-column: 2 / 3;
+        width: 9em;
     }
 }
 
